@@ -15,9 +15,11 @@ namespace LoginRegistrationAssingment.Models
         public string Email {get;set;}
 
         [Required]
+        [MinLength(2, ErrorMessage="You Need at least 2 charaters in your First Name!")]
         public string FirstName {get;set;}
 
         [Required]
+        [MinLength(2, ErrorMessage="You Need at least 8 charaters in your Last Name!")]
         public string LastName {get;set;}
 
 

@@ -51,7 +51,7 @@ namespace LoginRegistrationAssingment.Controllers
                 _context.Add(newUser);
                 _context.SaveChanges();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("login");
             }
             return View("Register");
         }
